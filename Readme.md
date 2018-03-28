@@ -1,17 +1,22 @@
-ÓÃ·¨£ºÖ´ĞĞtest_thread.shÎÄ¼ş£¬º¬Á½¸ö²ÎÊı£¬µÚ¶ş¸ö²ÎÊı¹Ì¶¨Î»reliability£¬±íÊ¾Ö´ĞĞ¿É¿¿ĞÔÓÃÀı
+# æ¥¼å®‡é€šä¿¡å¯é æ€§æµ‹è¯•
+---
 
-./test_thread.sh reg_thread reliability
+## ç”¨æ³•ï¼š
+	æ‰§è¡Œtest_thread.shæ–‡ä»¶ï¼Œå«ä¸¤ä¸ªå‚æ•°ï¼Œç¬¬äºŒä¸ªå‚æ•°å›ºå®šä½reliabilityï¼Œè¡¨ç¤ºæ‰§è¡Œå¯é æ€§ç”¨ä¾‹
 
-²ÎÊı£º
-reg_thread: test_reg_thread.cpp²âÊÔÓÃÀıÎÄ¼şÃûµÄÒ»²¿·Ö£¬±íÊ¾±àÒë¸ÃÎÄ¼ş
-reliability£º ¿É¿¿ĞÔ²âÊÔ¡£³£¹æ²âÊÔ²»ĞèÒªÕâ¸ö²ÎÊı
+	å¦‚ï¼š./test_thread.sh reg_thread reliability
 
-¹¦ÄÜ£º
-	a)ÀûÓÃtest_call.mkÉú³ÉĞÂµÄmakefileÎÄ¼ş£¬È»ºóÖØĞÂ±àÒë£¨Ö´ĞĞmake cleanºÍmake£©
-	b)½«±àÒëºóÉú³ÉµÄ¿ÉÖ´ĞĞÎÄ¼ş¿½±´µ½NFS¹²ÏíÄ¿Â¼
+## å‚æ•°ï¼š
+	reg_thread: test_reg_thread.cppæµ‹è¯•ç”¨ä¾‹æ–‡ä»¶åçš„ä¸€éƒ¨åˆ†ï¼Œè¡¨ç¤ºç¼–è¯‘è¯¥æ–‡ä»¶
+	reliabilityï¼š å¯é æ€§æµ‹è¯•ã€‚å¸¸è§„æµ‹è¯•ä¸éœ€è¦è¿™ä¸ªå‚æ•°
 
-test_reg.cpp£ºµ¥Ïß³Ì×¢²á1000Ì¨Ìİ¿Ú»ú£¬ÅäºÏtest.shÊ¹ÓÃ
-test_reg_thread.cpp£º4¸öÏß³ÌËÀÑ­»·×¢²á1000Ì¨Ìİ¿Ú»ú£¬ÅäºÏtest_thread.shÊ¹ÓÃ
-TestForReliability.cpp£º±»ÒıÓÃµÄÎÄ¼ş£¬¼Ì³ĞUserAgentÀà
-TestForReliability.h£º±»ÒıÓÃµÄÎÄ¼ş£¬¼Ì³ĞUserAgentÀà
-test_thread.sh: Åú´¦ÀíshellÎÄ¼ş
+## åŠŸèƒ½ï¼š
+	a)åˆ©ç”¨test_call.mkç”Ÿæˆæ–°çš„makefileæ–‡ä»¶ï¼Œç„¶åé‡æ–°ç¼–è¯‘ï¼ˆæ‰§è¡Œmake cleanå’Œmakeï¼‰
+	b)å°†ç¼–è¯‘åç”Ÿæˆçš„å¯æ‰§è¡Œæ–‡ä»¶æ‹·è´åˆ°NFSå…±äº«ç›®å½•
+
+## æ–‡ä»¶ç”¨é€”
+	test_reg.cppï¼šå•çº¿ç¨‹æ³¨å†Œ1000å°æ¢¯å£æœºï¼Œé…åˆtest.shä½¿ç”¨
+	test_reg_thread.cppï¼š4ä¸ªçº¿ç¨‹æ­»å¾ªç¯æ³¨å†Œ1000å°æ¢¯å£æœºï¼Œé…åˆtest_thread.shä½¿ç”¨
+	TestForReliability.cppï¼šè¢«å¼•ç”¨çš„æ–‡ä»¶ï¼Œç»§æ‰¿UserAgentç±»
+	TestForReliability.hï¼šè¢«å¼•ç”¨çš„æ–‡ä»¶ï¼Œç»§æ‰¿UserAgentç±»
+	test_thread.sh: æ‰¹å¤„ç†shellæ–‡ä»¶
